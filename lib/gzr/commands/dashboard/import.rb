@@ -94,7 +94,7 @@ module Gzr
               source_dashboard_layouts = data[:dashboard_layouts].map do |new_layout|
                 layout_obj = nil
                 if new_layout[:active] 
-                  say_warning "Updating layout dashboard: #{dashboard}"
+                  say_warning "Updating layout dashboard: #{dashboard.inspect}"
                   layout_obj = get_dashboard_layout(dashboard[:dashboard_layouts].first.id)
                   say_warning "Updating layout #{layout_obj.id}" if @options[:debug]
                 else  
