@@ -34,7 +34,7 @@ module Gzr
       data = nil
       begin
         req = {:name => name, :parent_id => parent_id}
-        data = @sdk.create_space(req)
+        data = @sdk.create_folder(req)
       rescue LookerSDK::Error => e
         say_error "Error creating space(#{JSON.pretty_generate(req)})"
         say_error e.message
@@ -48,7 +48,7 @@ module Gzr
       begin
         req = {:name => name}
         req[:fields] = fields if fields
-        data = @sdk.search_spaces(req)
+        data = @sdk.search_folders(req)
       rescue LookerSDK::Error => e
         say_error "Error querying search_spaces(#{JSON.pretty_generate(req)})"
         say_error e.message
@@ -62,7 +62,7 @@ module Gzr
       begin
         req = {}
         req[:fields] = fields if fields 
-        data = @sdk.space(id, req)
+        data = @sdk.folder(id, req)
       rescue LookerSDK::NotFound
         return nil
       rescue LookerSDK::Error => e
