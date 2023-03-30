@@ -1,5 +1,26 @@
 # Changelog
 
+### [0.2.59](https://www.github.com/looker-open-source/gzr/compare/v0.2.58...v0.2.59) (2023-03-29)
+
+
+### Bug Fixes
+
+* migrate to API 4.0 ([#154](https://www.github.com/looker-open-source/gzr/issues/154)) ([eecdfd4](https://www.github.com/looker-open-source/gzr/commit/eecdfd41a886f2edbac528a34f83dc7a6ea83f74))
+
+### [0.2.58](https://www.github.com/looker-open-source/gzr/compare/v0.2.57...v0.2.58) (2023-03-16)
+
+
+### Bug Fixes
+
+* temporary fix for faraday 2.x in looker-sdk ([#159](https://www.github.com/looker-open-source/gzr/issues/159)) ([d89f813](https://www.github.com/looker-open-source/gzr/commit/d89f8138587c2986352be25b59bda79d07ea2bb4))
+
+### [0.2.57](https://www.github.com/looker-open-source/gzr/compare/v0.2.56...v0.2.57) (2023-03-16)
+
+
+### Bug Fixes
+
+* temporary fix for faraday 2.x in looker-sdk ([acdb7e8](https://www.github.com/looker-open-source/gzr/commit/acdb7e8a174cd3dde5d8c95c95e572ec331b948f))
+
 ### [0.2.56](https://www.github.com/looker-open-source/gzr/compare/v0.2.55...v0.2.56) (2022-07-14)
 
 ### Bug Fixes
