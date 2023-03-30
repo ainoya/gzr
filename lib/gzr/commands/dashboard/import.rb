@@ -189,7 +189,7 @@ module Gzr
               (keys_to_keep('create_dashboard') - [:space_id,:folder_id,:user_id,:slug]).include? k
             end
             new_dash[:slug] = source[:slug] unless slug_used
-            new_dash[:space_id] = target_space_id
+            new_dash[:folder_id] = target_space_id
             new_dash[:user_id] = @me.id
             return create_dashboard(new_dash)
           end
